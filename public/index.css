@@ -185,9 +185,12 @@ nav div button {
 } 
 @media only screen and (max-width:1113px){
     .overlay{
- 
+ height:58rem;
     }}
     @media only screen and (max-width:1024px){
+        .overlay{
+            height:58rem;
+               }
     #sc{
         display:none;
     } 
@@ -203,6 +206,9 @@ nav div button {
     }
     }
     @media only screen and (max-width:636px){
+        .overlay{
+            height:58rem;
+               }
         #sc{
             display:none;
         } 
@@ -237,6 +243,9 @@ nav div button {
         }
 
         @media only screen and (max-width:457px){
+            .overlay{
+                height:58rem;
+                   }
             #sc{
                 display:none;
             } 
@@ -258,7 +267,7 @@ nav div button {
                 font-size: 2.2rem;
             }
             .desc p {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 color: #c5c2c2;
             }
             .section h2 {
