@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:60%;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+nav{
+    background-color:rgb(17, 17, 17);
+    display:flex;
+    justify-content: space-between;
+}
+
+#search {
+    width: 89%;
+    height: 2.5em;
+    padding: 0.5em 0.5em;
+    border-radius: 0.4em;
+    border: none;
+    margin: 1em 0;
+    font-size: 24em;
+}
+#search::placeholder{
+    color:rgba(128, 128, 128, 0.483);
+}
+nav div {
+    width: 19%;
+    display: flex;
+}
+nav div button {
+    color: black;
+    width: 75em;
+    height: 73em;
+    margin-top: 47em;
+    border-radius: 159em;
+    background-color: black;
+    border: none;
+    margin-left: 2em;
+    margin-right: 35em;
+}
+
+
+.poster {
+    width: 15%;
+    border-radius: 70em;
+}
+
+.backdrop {
+    width: 70%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+}
+.maindesc {
+    display: flex;
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+}
+.desc h2{
+    font-size: 3.5rem;
+}
+.desc p {
+    font-size: 2rem;
+    color: #c5c2c2;
+}
+.desc{
+    width:100%;
+    margin-left:1%;
+}
+.display {
+    width: 92%;
+}
+.overlay {
+    z-index: 1;
+    background-color: #000000b3;
+    height: 59rem;
+}
+.cardside img {
+    width: 29%;
+    margin-right: 15em;
+    border-radius: 40em;
+}
+
+
+.cardside {
+    width: 91%;
+    display: flex;
+    margin-left: 32em;
+    background-color: rgb(17 17 17 / 72%);
+}
+#sc {
+    display: flex;
+    width: 39%;
+    flex-direction: column;
+}
+#hero{
+    display:flex;
+}
+.cardside h3 {
+    font-size: 2.2rem;
+    margin: 0.2em 0;
+}
+.cardside p {
+    font-size: 1.8rem;
+    margin: 0.2em 0;
+}
+
+.dispc {
+    min-width: 22rem;
+    margin: 2rem;
+    margin-bottom:0;
+}
+.dispc img{
+    width:100%;
+    border-radius:2rem 2rem 0 0;
+}
+.dispc h4 {
+    font-size: 2.2rem;
+}
+.dcon p{
+    font-size:1.5rem;
+}
+.star{
+    display:flex;
+}
+.dcon {
+    background-color: rgb(36 35 35 / 33%);
+    border-radius: 0 0em 15em 15em;
+}
+
+.scroll{
+    display:flex;
+    overflow-x:scroll;
+    width:98vw;
+}
+.scroll::-webkit-scrollbar {
+    width: 2px;
+  }
+  .section{
+    margin-top:5rem;
+  }
+  
+  /* Track */
+  .scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .scroll::-webkit-scrollbar-thumb {
+    background: rgb(52, 52, 52);
+    border-radius: 10px;
+  }
+  .section h2 {
+    font-size: 3.5rem;
+    margin-left: 3rem;
+}
+
+
+@media only screen and (max-width:1284px){
+    html{
+        font-size:55%;
+    }
+    .overlay{
+        height:58rem;
+    }
+
+} 
+@media only screen and (max-width:1113px){
+    .overlay{
+ 
+    }}
+    @media only screen and (max-width:1024px){
+    #sc{
+        display:none;
+    } 
+    .backdrop{
+        width:100%;
+        height:69%;
+    }   
+    .display{
+        width:100%;
+    }
+    .maindesc{
+        width:100%;
+    }
+    }
+    @media only screen and (max-width:636px){
+        #sc{
+            display:none;
+        } 
+        .backdrop{
+            width:100%;
+            height:69%;
+        }   
+        .display{
+            width:100%;
+        }
+        .maindesc{
+            width:100%;
+            margin-top:52%;
+        }
+        .desc h2 {
+            font-size: 2.5rem;
+        }
+        .desc p {
+            font-size: 1.7rem;
+            color: #c5c2c2;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-left: 3rem;
+        }
+        .dispc h4 {
+            font-size: 2.2rem;
+        }
+        }
+
+        @media only screen and (max-width:457px){
+            #sc{
+                display:none;
+            } 
+            .dispc{
+                min-width:18rem;
+            }
+            .backdrop{
+                width:100%;
+                height:69%;
+            }   
+            .display{
+                width:100%;
+            }
+            .maindesc{
+                width:100%;
+                margin-top:71%;
+            }
+            .desc h2 {
+                font-size: 2.2rem;
+            }
+            .desc p {
+                font-size: 1.3rem;
+                color: #c5c2c2;
+            }
+            .section h2 {
+                font-size: 2.3rem;
+                margin-left: 3rem;
+            }
+            .dispc h4 {
+                font-size: 2.2rem;
+            }
+            }
