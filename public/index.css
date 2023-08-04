@@ -185,6 +185,18 @@ nav div button {
     /* background-color: black; */
     transition: all 0.2s linear;
 }
+.eleme1 {
+    font-size: 2rem;
+    text-decoration: none;
+    /* border: 0.1em solid white; */
+    /* padding: 0px 4%; */
+    /* width: 18rem; */
+    height: 2em;
+    margin: auto 1.1em;
+    /* border-radius: 22px; */
+    /* background-color: black; */
+    transition: all 0.2s linear;
+}
 footer h2 {
     font-size: 2rem;
     text-align: center;
@@ -221,6 +233,55 @@ footer h2 {
 }
 .imdb{
     display:flex;
+}
+
+#ham {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    z-index: 1000;
+    overflow-y: hidden;
+    background-color: black;
+}
+.show{
+    animation:sho 0.5s linear forwards;
+}
+@keyframes sho{
+    from{
+        height:0;
+    }
+    to{
+        height:100vh;
+    }
+}
+
+.hide{
+    animation:hid 0.5s linear forwards;
+}
+@keyframes hid{
+    from{
+        height:100vh;
+    }
+    to{
+   height:0;
+    }
+}
+.ico {
+    width: 48px;
+    height: 4px;
+    border-radius: 32px;
+    background-color: white;
+    margin: 7px;
+}
+#holder{
+    display:flex;
+    flex-direction:column;
+}
+.tod{
+    display:none;
 }
 
 @media only screen and (max-width:1284px){
@@ -361,6 +422,9 @@ footer h2 {
             }
 
             @media only screen and (max-width:768px){
+                .eleme{
+                    display:none;
+                }
                 .lcard{
                     flex-direction: column;
                 }
@@ -381,6 +445,10 @@ footer h2 {
                 .imdb {
                     display: flex;
                     margin: 0 auto;
+                }
+                .tod {
+                    display: block;
+                    margin: 0;
                 }
             }
 
@@ -409,3 +477,4 @@ footer h2 {
                     margin: 0 auto;
                 }
             }
+
