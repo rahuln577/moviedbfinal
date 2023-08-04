@@ -1,4 +1,4 @@
-import {newcontext} from "../App"
+import {newcontext} from "./../Pages/Home"
 import {useContext} from "react"
 import DispCard from "./DispCard"
 import Card from "./Card"
