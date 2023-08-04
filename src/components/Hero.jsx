@@ -11,7 +11,7 @@ return<div id="hero">
     <img class="poster" src={`http://image.tmdb.org/t/p/original/${result1?.results[2].poster_path}`}></img>
     <div class="desc">
         <h2>{result1?.results[2].original_title}</h2>
-        <p>{result1?.results[2].overview}</p>
+        <p>{result1?.results[2].overview.slice(0,300)}...</p>
     </div>
     </div>
     <div class="overlay">
