@@ -8,8 +8,12 @@ function App(){
         <Navbar/>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
-                <Route path="/listpage" element={<ListPage/>}></Route>
+                <Route path="/nowplaying" element={<ListPage />}></Route>
+                <Route path="/popular" element={<ListPage />}></Route>
+                <Route path="/upcoming" element={<ListPage />}></Route>
+                <Route path="/toprated" element={<ListPage />}></Route>
             </Routes>
+        <footer><h2> &#169; Copyrights Reserved by Rahul N</h2></footer>
         </BrowserRouter>
         </div>
 }

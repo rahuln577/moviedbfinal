@@ -1,5 +1,6 @@
 import { SiThemoviedatabase } from 'react-icons/si';
 import {BiSearchAlt} from 'react-icons/bi'
+import {Link} from "react-router-dom"
 export default function Navbar(){
 const style={
     fontSize:"4rem",
@@ -10,10 +11,16 @@ const styleser={
     fontSize:"2rem",
     color:"white",
 }
+
 return <div id="nav"><nav>
-    <SiThemoviedatabase style={style}/>
+    <Link to="/" ><SiThemoviedatabase style={style}/></Link>
+
     <div>
-    <input id="search" type="search" placeholder='Search here...'></input>
-    <button><BiSearchAlt style={styleser}/></button></div>
-</nav></div>
+    <Link className="eleme"to="/nowplaying" state={{url:"https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1"}}>Now Playing</Link>
+    <Link className="eleme"to="/popular" state={{url:"https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"}}>Popular</Link>
+    <Link className="eleme"to="/toprated" state={{url:"https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1"}}>Top Rated</Link>
+    <Link className="eleme"to="/upcoming" state={{url:"https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1"}}>Upcoming</Link>
+    </div>
+</nav>
+</div>
 }

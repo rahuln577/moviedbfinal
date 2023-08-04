@@ -25,14 +25,15 @@ nav{
     padding: 0.5em 0.5em;
     border-radius: 0.4em;
     border: none;
-    margin: 2em 0;
+    margin: 1.7rem 0;
     font-size: 24em;
 }
 #search::placeholder{
     color:rgba(128, 128, 128, 0.483);
 }
 nav div {
-    width: 19%;
+    /* width: 64%; */
+    margin: 0 auto;
     display: flex;
 }
 nav div button {
@@ -70,7 +71,7 @@ nav div button {
 }
 .desc p {
     font-size: 2rem;
-    color: #c5c2c2;
+    color: white;
 }
 .desc{
     width:100%;
@@ -172,7 +173,55 @@ nav div button {
     font-size: 3.5rem;
     margin-left: 3rem;
 }
+.eleme {
+    font-size: 2rem;
+    text-decoration: none;
+    /* border: 0.1em solid white; */
+    /* padding: 0px 4%; */
+    /* width: 18rem; */
+    height: 2em;
+    margin: auto 1.1em;
+    /* border-radius: 22px; */
+    /* background-color: black; */
+    transition: all 0.2s linear;
+}
+footer h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 7rem;
+    color: gray;
+}
+.eleme:hover{
+    color:red;
+    font-size:2.1rem;
+    border-color:red;
+}
 
+
+
+.lcard img {
+    width: 25rem;
+    border-radius: 39em;
+}
+.lcard {
+    display: flex;
+    margin: 4rem 8rem;
+}
+.lcont h1 {
+    font-size: 3.5rem;
+    color:red;
+}
+.lcont p{
+    font-size:2.5rem;
+}
+.lcont{
+    display:flex;
+    flex-direction:column;
+    margin:auto 1rem;
+}
+.imdb{
+    display:flex;
+}
 
 @media only screen and (max-width:1284px){
     html{
@@ -226,12 +275,12 @@ nav div button {
         .desc h2 {
             font-size: 2.5rem;
         }
-        .star{
-            margin:0 7rem;
+        .star {
+            margin: 0 8.8rem;
         }
         .desc p {
             font-size: 1.7rem;
-            color: #c5c2c2;
+            color:white;
         }
         .section h2 {
             font-size: 2.5rem;
@@ -243,6 +292,9 @@ nav div button {
         }
 
         @media only screen and (max-width:457px){
+            .star {
+                margin: 0 7rem;
+            }
             .overlay{
                 height:58rem;
                    }
@@ -268,7 +320,7 @@ nav div button {
             }
             .desc p {
                 font-size: 1.5rem;
-                color: #c5c2c2;
+                color: white;
             }
             .section h2 {
                 font-size: 2.3rem;
@@ -277,4 +329,83 @@ nav div button {
             .dispc h4 {
                 font-size: 2.2rem;
             }
+            }
+
+
+            @media only screen and (max-width:975px){
+                .lcont h1 {
+                    font-size: 3rem;
+                    color: red;
+                }
+                .lcont p {
+                    font-size: 2.2rem;
+                }
+                .lcard img {
+                    width: 24rem;
+                    border-radius: 39em;
+                }
+            }
+            
+            @media only screen and (max-width:828px){
+                .lcont h1 {
+                    font-size: 2.7rem;
+                    color: red;
+                }
+                .lcont p {
+                    font-size: 2rem;
+                }
+                .lcard img {
+                    width: 24rem;
+                    border-radius: 39em;
+                }
+            }
+
+            @media only screen and (max-width:768px){
+                .lcard{
+                    flex-direction: column;
+                }
+                .lcard img {
+                    width: 26rem;
+                    border-radius: 39em;
+                    margin: 0 auto;
+                }
+                .lcont h1 {
+                    font-size: 3.5rem;
+                    color: red;
+                    text-align: center;
+                }
+                .lcont p {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+                .imdb {
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+
+            @media only screen and (max-width:583px){
+                .lcard {
+                    flex-direction: column;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                }
+                .lcard img {
+                    width: 26rem;
+                    border-radius: 39em;
+                    margin: 0 auto;
+                }
+                .lcont h1 {
+                    font-size: 3.2rem;
+                    color: red;
+                    text-align: center;
+                }
+                .lcont p {
+                    font-size: 2.2rem;
+                    text-align: center;
+                }
+                .imdb {
+                    display: flex;
+                    margin: 0 auto;
+                }
             }
