@@ -1,10 +1,10 @@
-import {BrowserRouter,Routes,Route,Link} from "react-router-dom"
+import {HashRouter,Routes,Route,Link} from "react-router-dom"
 import Home from "./Pages/Home"
 import ListPage from "./Pages/ListPage"
 import Navbar from "./components/Navbar"
 function App(){
     return <div>
-        <BrowserRouter>
+        <HashRouter>
         <Navbar/>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
@@ -14,7 +14,7 @@ function App(){
                 <Route path="/toprated" element={<ListPage />}></Route>
             </Routes>
         <footer><h2> &#169; Copyrights Reserved by Rahul N</h2></footer>
-        </BrowserRouter>
+        </HashRouter>
         </div>
 }
 export default App
