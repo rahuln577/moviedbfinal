@@ -8,14 +8,14 @@ return<div id="hero">
     <div class="display">
     <div class="cont">
     <div class="maindesc">
-    <img class="poster" src={`http://image.tmdb.org/t/p/original/${result1?.results[2].poster_path}`}></img>
+    <img class="poster" src={`http://image.tmdb.org/t/p/original/${result1?.results[1].poster_path}`}></img>
     <div class="desc">
-        <h2>{result1?.results[2].original_title}</h2>
-        <p>{result1?.results[2].overview.slice(0,300)}...</p>
+        <h2>{result1?.results[1].original_title}</h2>
+        <p>{result1?.results[1].overview.slice(0,300)}...</p>
     </div>
     </div>
     <div class="overlay">
-    <img class="backdrop" src={`http://image.tmdb.org/t/p/original/${result1?.results[2].backdrop_path}`}></img>
+    <img class="backdrop" src={`http://image.tmdb.org/t/p/original/${result1?.results[1].backdrop_path}`}></img>
     </div>
     </div>
     </div>
