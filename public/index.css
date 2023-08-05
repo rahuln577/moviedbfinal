@@ -144,6 +144,7 @@ nav div button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow:hidden;
 }
 
 .scroll{
@@ -349,7 +350,7 @@ footer h2 {
             font-size: 2.5rem;
         }
         .star {
-            margin: 0 7.8rem;
+            margin: 0 9.1rem;
         }
         .desc p {
             font-size: 1.8rem;
@@ -462,7 +463,7 @@ footer h2 {
                 }
                 .tod {
                     display: block;
-                    margin: 0;
+                    margin: auto 0;
                 }
             }
 
@@ -472,7 +473,7 @@ footer h2 {
                     margin-left: 3rem;
                     margin-right: 3rem;
                     margin-top:4rem;
-                    margin-bottom:4rem;
+                    margin-bottom:6rem;
                 }
                 .lcard img {
                     width: 23rem;
