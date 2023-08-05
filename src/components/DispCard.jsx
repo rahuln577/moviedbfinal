@@ -8,7 +8,7 @@ return <div class="dispc">
     <div class="dcon">
         <div>
         <h4>{props.res?.original_title}</h4>
-        <div class="star"><BsStarFill style={style} fill="yellow"/><p>{props.res?.vote_average}</p></div>
+        <div class="star"><BsStarFill style={style} fill="yellow"/><p>{props.res?.vote_average.toString().slice(0,3)}</p></div>
         </div>
     </div>
 </div>

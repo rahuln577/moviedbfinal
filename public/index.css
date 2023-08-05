@@ -203,6 +203,10 @@ footer h2 {
     margin-top: 7rem;
     /* color: gray; */
 }
+#im{
+    display:flex;
+    flex-direction:row;
+}
 .eleme:hover{
     color:red;
     font-size:2.1rem;
@@ -319,6 +323,9 @@ footer h2 {
         .overlay{
             height:58rem;
                }
+        .dpisc{
+            width:19rem;
+        }
         #sc{
             display:none;
         } 
@@ -337,7 +344,7 @@ footer h2 {
             font-size: 2.5rem;
         }
         .star {
-            margin: 0 8.8rem;
+            margin: 0 7.8rem;
         }
         .desc p {
             font-size: 1.8rem;
