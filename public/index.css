@@ -251,38 +251,43 @@ footer h2 {
     background-color: black;
 }
 .show{
-    animation:sho 0.5s linear forwards;
+    animation:sho 0.3s linear forwards;
 }
 @keyframes sho{
     from{
         height:0;
+        opacity:0;
     }
     to{
-        height:100vh;
+        opacity:1;
+        height:20rem;
     }
 }
 
 .hide{
-    animation:hid 0.5s linear forwards;
+    animation:hid 0.3s linear forwards;
 }
 @keyframes hid{
     from{
-        height:100vh;
+        height:20rem;
+        opacity:1;
     }
     to{
    height:0;
+   opacity:0;
     }
 }
 .ico {
-    width: 48px;
+    width: 39px;
     height: 4px;
     border-radius: 32px;
     background-color: white;
-    margin: 7px;
+    margin: 6px;
 }
-#holder{
-    display:flex;
-    flex-direction:column;
+#holder {
+    display: flex;
+    flex-direction: column;
+    height: 42px;
 }
 .tod{
     display:none;
@@ -432,21 +437,23 @@ footer h2 {
                 .eleme{
                     display:none;
                 }
-                .lcard{
-                    flex-direction: column;
+                .lcard {
+                    display: flex;
+                    flex-direction:column;
+                    margin: 8rem 8rem;
                 }
                 .lcard img {
-                    width: 26rem;
+                    width: 23rem;
                     border-radius: 39em;
                     margin: 0 auto;
                 }
                 .lcont h1 {
-                    font-size: 3.5rem;
+                    font-size: 3rem;
                     color: red;
                     text-align: center;
                 }
                 .lcont p {
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
                     text-align: center;
                 }
                 .imdb {
@@ -464,14 +471,16 @@ footer h2 {
                     flex-direction: column;
                     margin-left: 3rem;
                     margin-right: 3rem;
+                    margin-top:4rem;
+                    margin-bottom:4rem;
                 }
                 .lcard img {
-                    width: 26rem;
+                    width: 23rem;
                     border-radius: 39em;
                     margin: 0 auto;
                 }
                 .lcont h1 {
-                    font-size: 3.2rem;
+                    font-size: 3rem;
                     color: red;
                     text-align: center;
                 }
