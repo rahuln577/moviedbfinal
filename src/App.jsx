@@ -2,6 +2,7 @@ import {HashRouter,Routes,Route,Link} from "react-router-dom"
 import Home from "./Pages/Home"
 import ListPage from "./Pages/ListPage"
 import Navbar from "./components/Navbar"
+import Info from "./Pages/Info"
 function App(){
     return <div>
         <HashRouter>
@@ -12,6 +13,7 @@ function App(){
                 <Route path="/popular" element={<ListPage />}></Route>
                 <Route path="/upcoming" element={<ListPage />}></Route>
                 <Route path="/toprated" element={<ListPage />}></Route>
+                <Route path="/info" element={<Info/>}></Route>
             </Routes>
         <footer><h2> &#169; Copyrights Reserved by Rahul N</h2></footer>
         </HashRouter>

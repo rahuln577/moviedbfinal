@@ -71,8 +71,15 @@ nav div button {
     font-size: 3.5rem;
 }
 .desc p {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #e0dfdf;
+}
+.scroll1 {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 94%;
+    margin-left:2.3rem;
 }
 .desc{
     width:100%;
@@ -109,7 +116,7 @@ nav div button {
     display:flex;
 }
 .cardside h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 0.2em 0;
 }
 .cardside p {
@@ -127,7 +134,7 @@ nav div button {
     border-radius:2rem 2rem 0 0;
 }
 .dispc h4 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align:center;
 }
 .dcon p{
@@ -151,9 +158,13 @@ nav div button {
 .scroll{
     display:flex;
     overflow-x:scroll;
+    overflow-y:hidden;
     width:98vw;
 }
 .scroll::-webkit-scrollbar {
+    height:0.6vw;
+  }
+  .scroll1::-webkit-scrollbar {
     height:0.6vw;
   }
   .section{
@@ -165,14 +176,22 @@ nav div button {
     box-shadow: inset 0 0 5px black;
     border-radius: 10px;
   }
+  .scroll1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+  }
   
   /* Handle */
   .scroll::-webkit-scrollbar-thumb {
     background: rgb(52, 52, 52);
     border-radius: 10px;
   }
+  .scroll1::-webkit-scrollbar-thumb {
+    background: rgb(52, 52, 52);
+    border-radius: 10px;
+  }
   .section h2 {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     margin-left: 3rem;
 }
 .eleme {
@@ -218,7 +237,7 @@ footer h2 {
 
 
 .lcard img {
-    width: 25rem;
+    width: 20rem;
     border-radius: 39em;
 }
 .lcard {
@@ -226,16 +245,46 @@ footer h2 {
     margin: 4rem 8rem;
 }
 .lcont h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color:red;
 }
 .lcont p{
-    font-size:2.5rem;
+    font-size:2rem;
+}
+.simi {
+    width: 16rem;
+    height: 23rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+}
+.link{
+    transition:all 0.3s linear;
+}
+.link:hover{
+    transform:scale(1.05);
+}
+.simic {
+    max-width: 21rem;
+    height: 22rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
 }
 .lcont{
     display:flex;
     flex-direction:column;
     margin:auto 1rem;
+}
+.icont h1 {
+    font-size: 2.5rem;
+    color:red;
+}
+.icont p{
+    font-size:2rem;
+}
+.icont{
+    display:flex;
+    flex-direction:column;
+    margin:1rem 1rem;
 }
 .imdb{
     display:flex;
@@ -250,19 +299,34 @@ footer h2 {
     text-align: center;
     z-index: 1000;
     overflow-y: hidden;
-    background-color: black;
+    background-color: rgb(17, 17, 17);
 }
 .show{
     animation:sho 0.3s linear forwards;
 }
+iframe{
+    min-height: 41rem;
+    min-width: 73rem;
+    margin:1rem 1rem;
+    border:none;
+}
+#he{
+    color: red;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    display:none;
+    margin-top:2rem;
+}
+.infoma{
+    display:flex;
+}
 @keyframes sho{
     from{
         height:0;
-        opacity:0;
     }
     to{
-        opacity:1;
-        height:20rem;
+
+        height:40rem;
     }
 }
 
@@ -326,12 +390,27 @@ footer h2 {
         width:100%;
     }
     }
+    @media only screen and (max-width:1084px){
+        .infoma{
+            flex-direction:column;
+        }
+        iframe{
+            min-width:0rem;
+        }
+        #inhe{
+            display:none;
+        }
+        #he{
+            display:block;
+        }
+    }
     @media only screen and (max-width:636px){
         .overlay{
             height:58rem;
                }
-        .dpisc{
-            width:19rem;
+        .dispc{
+            min-width:17rem;
+            margin:1rem;
         }
         #sc{
             display:none;
@@ -348,13 +427,13 @@ footer h2 {
             margin-top:52%;
         }
         .desc h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         .star {
-            margin: 0 9.1rem;
+            margin: 0 6.6rem;
         }
         .desc p {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #e0dfdf;
         }
         .section h2 {
@@ -362,13 +441,16 @@ footer h2 {
             margin-left: 3rem;
         }
         .dispc h4 {
-            font-size: 2.2rem;
+            font-size: 1.7rem;
+        }
+        .dcon{
+            height:11rem;
         }
         }
 
         @media only screen and (max-width:457px){
             .star {
-                margin: 0 7rem;
+                margin: 0 6.6rem;
             }
             .overlay{
                 height:58rem;
@@ -377,7 +459,8 @@ footer h2 {
                 display:none;
             } 
             .dispc{
-                min-width:18rem;
+                min-width:17rem;
+                margin:1rem;
             }
             .backdrop{
                 width:100%;
@@ -402,7 +485,7 @@ footer h2 {
                 margin-left: 3rem;
             }
             .dispc h4 {
-                font-size: 2.2rem;
+                font-size: 1.7rem;
             }
             }
 
@@ -413,6 +496,13 @@ footer h2 {
                     color: red;
                 }
                 .lcont p {
+                    font-size: 2.2rem;
+                }
+                .icont h1 {
+                    font-size: 3rem;
+                    color: red;
+                }
+                .icont p {
                     font-size: 2.2rem;
                 }
                 .lcard img {
@@ -429,6 +519,13 @@ footer h2 {
                 .lcont p {
                     font-size: 2rem;
                 }
+                .icont h1 {
+                    font-size: 2.7rem;
+                    color: red;
+                }
+                .icont p {
+                    font-size: 2rem;
+                }
                 .lcard img {
                     width: 24rem;
                     border-radius: 39em;
@@ -441,22 +538,27 @@ footer h2 {
                 }
                 .lcard {
                     display: flex;
-                    flex-direction:column;
-                    margin: 8rem 8rem;
+                    flex-direction:row;
+                    margin: 8rem 2rem;
                 }
                 .lcard img {
-                    width: 23rem;
+                    width: 20rem;
                     border-radius: 39em;
                     margin: 0 auto;
                 }
                 .lcont h1 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     color: red;
-                    text-align: center;
                 }
                 .lcont p {
-                    font-size: 2.2rem;
-                    text-align: center;
+                    font-size: 1.7rem;
+                }
+                .icont h1 {
+                    font-size: 2rem;
+                    color: red;
+                }
+                .icont p {
+                    font-size: 1.7rem;
                 }
                 .imdb {
                     display: flex;
@@ -470,25 +572,31 @@ footer h2 {
 
             @media only screen and (max-width:583px){
                 .lcard {
-                    flex-direction: column;
-                    margin-left: 3rem;
-                    margin-right: 3rem;
+                    flex-direction: row;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
                     margin-top:4rem;
                     margin-bottom:6rem;
                 }
                 .lcard img {
-                    width: 23rem;
-                    border-radius: 39em;
+                    min-width: 17rem;
+                    border-radius: 15em;
                     margin: 0 auto;
+                    height: 26rem;
                 }
                 .lcont h1 {
-                    font-size: 3rem;
+                    font-size: 2.2rem;
                     color: red;
-                    text-align: center;
                 }
                 .lcont p {
+                    font-size: 1.9rem;
+                }
+                .icont h1 {
                     font-size: 2.2rem;
-                    text-align: center;
+                    color: red;
+                }
+                .icont p {
+                    font-size: 1.9rem;
                 }
                 .imdb {
                     display: flex;
